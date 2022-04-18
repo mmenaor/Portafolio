@@ -105,6 +105,11 @@ section#section-header > div:first-child {
     margin-top: 3.2rem;
 }
 
+section#section-header > div:first-child > img {
+    height: calc(100vw - 16rem);
+    margin-left: 0.5rem;
+}
+
 /* --- THIS REFERS TO THE NAME / TITLE --- */
 section#section-header > div:nth-child(2) {
     /* ABSOLUTE SO IT CAN BE OVERPLAPPED */
@@ -282,7 +287,7 @@ main > section.section-portafolio > img {
     width: 30rem;
 }
 
-.container-footer {
+/* .container-footer {
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
@@ -293,7 +298,6 @@ main > section.section-portafolio > img {
 .container-footer > .item1 {
     width: 100%;
     text-align: center;
-
 }
 
 .container-footer > .item-imagen {
@@ -341,8 +345,71 @@ main > section.section-portafolio > img {
     font-size: 16px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+} */
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 35px;
+    margin-top: 5rem;
+    margin-bottom: 35px;
+/*     justify-content: center;
+    align-items: center; */
 }
 
+.grid-footer > .item1 {
+    grid-column: 1 / 13;
+    text-align: center;
+}
+
+.grid-footer > .item2 {
+    grid-column: 3 / 8;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+
+.grid-footer > .item3 {
+    grid-column: 6 / 11;
+    grid-row: 3 / 4;
+    justify-self: center;
+}
+
+.container-footer > .item-imagen {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.2rem;
+    background-color: #ffffff;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 20rem;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.container-footer > .item-imagen > img:nth-child(1) {
+    width: 20rem;
+}
+
+.container-footer > .item-imagen > img:nth-child(2) {
+    width: 8rem;
+    position: absolute;
+    top: calc((20rem - 8rem)/2);
+    left: calc((20rem - 8rem)/2);
+}
+
+.container-footer > .item-imagen > h3 {
+    color: #242635;
+    margin-top: 0.5rem;
+    font-size: 18px;
+}
+
+.container-footer > .item-imagen > p {
+    color: #d1ceca;
+    font-size: 16px;
+    margin-bottom: 1.2rem;
+}
 
 /* --------------------- Media Query --------------------- */
 
