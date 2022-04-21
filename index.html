@@ -21,7 +21,7 @@
             </label>
             <ul>
                 <li>
-                    <a href="">Home</a>
+                    <a href="#section-header">Home</a>
                 </li>
                 <li>
                     <a href="#acerca-de-mi">Acerca de mí</a>
@@ -42,84 +42,99 @@
         </nav>
         <section id="section-header">
             <div>
-                <img src="./assets/images/MarioMena.png" alt="">
+                <img src="./assets/images/MarioMena.png" alt="Mario Mena" id="foto-mario">
             </div>
             <div>
-                <h1>Soy<br><span class="blue-decor">Mario</span></h1>
+                <h1 class="subtitle">Soy<br><span class="title blue-decor">Mario</span></h1>
                 <hr>
-                <h2>Desarrollador<br>Web Full Stack</h2>
+                <h2 class="subtitle">Desarrollador<br>Web Full Stack</h2>
             </div>
-            <h3><span class="blue-decor">3 años</span><br>experiencia</h3>
+            <h3 class="subsection"><span class="subtitle blue-decor">3 años</span><br>experiencia</h3>
             <div>
                 <div><img src="./assets/icons/cib_linkedin-in.svg" alt=""></div>
                 <div><img src="./assets/icons/ant-design_instagram-filled.svg" alt=""></div>
                 <div><img src="./assets/icons/ant-design_twitter-outlined.svg" alt=""></div>
             </div>
-            <div>
+            <div class="div-radius">
                 <div><img src="./assets/images/akar-icons_google-fill.png" alt=""></div>
                 <div><img src="./assets/images/ant-design_amazon-outlined.png" alt=""></div>
                 <div><img src="./assets/images/bi_spotify.png" alt=""></div>
             </div>
         </section>
     </header>
+
     <main>
-        <section>
+        <section class="container-sobreMi">
             <h2 class="subtitle blue-decor" id="acerca-de-mi""">Acerca de mí</h2>
             <p class="body-text textalign">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nulla fugit iusto quaerat iste labore omnis. Aspernatur nesciunt consequatur soluta assumenda rem nostrum autem at maiores, voluptatum, error alias numquam voluptate perferendis, natus inventore quae nisi ipsa! Quis alias exercitationem repudiandae, aut, nostrum consectetur necessitatibus quae quos, nulla saepe non!</p>
         </section>
         <section class="container-servicios">
             <h2 class="item1 subtitle blue-decor" id="servicios">Servicios</h2>
-            <div class="item2">
-                <div class="imagen-servicios">
+            <div class="wrapper-servicios snaps-inline item2">
+                <div class="wrapper-servicios-item imagen-servicios">
                     <img src="./assets/vectors/Ellipse 14.svg" alt="estilo de imagen">
                     <img src="./assets/icons/iconoir_design-pencil.svg" alt="estilo de imagen">
-                    <h3>Back-end</h3>
-                    <p class="textalign">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, totam?</p>
+                    <h3 class="subsection">Back-end</h3>
+                    <p class="body-text textalign">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, totam?</p>
                 </div>
-                <!-- <div class="imagen-servicios">
+                <div class="wrapper-servicios-item imagen-servicios">
                     <img src="./assets/vectors/Ellipse 14.svg" alt="estilo de imagen">
                     <img src="./assets/icons/majesticons_speakerphone-line.svg" alt="estilo de imagen">
-                    <h3>Front-end</h3>
-                    <p class="textalign">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, totam?</p>
+                    <h3 class="subsection">Front-end</h3>
+                    <p class="body-text textalign">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, totam?</p>
                 </div>
-                <div class="imagen-servicios">
+                <div class="wrapper-servicios-item imagen-servicios">
                     <img src="./assets/vectors/Ellipse 14.svg" alt="estilo de imagen">
                     <img src="./assets/icons/feather_search.svg" alt="estilo de imagen">
-                    <h3>Full stack</h3>
-                    <p class="textalign">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, totam?</p>
-                </div> -->
+                    <h3 class="subsection">Full stack</h3>
+                    <p class="body-text textalign">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, totam?</p>
+                </div>
             </div>
         </section>
         <section class="section-habilidades">
-            <h2 class="subtitle blue-decor" id="mis-habilidades">Mis habilidades</h2>
-            <h3>Web design</h3>
-            <input type="range">
-            <h3>Interaction design</h3>
-            <input type="range">
-            <h3>Web design2</h3>
-            <input type="range">
+            <h2 id="mis-habilidades" class="subtitle blue-decor">Mis habilidades</h2>
+            <h3 class="subsection">Web design</h3>
+            <label id="progressLabel1" for="progress1">70%</label>
+            <progress id="progress1" max="100" value="70"></progress>
+            <h3 class="subsection">Interaction design</h3>
+            <label id="progressLabel2" for="progress2">85%</label>
+            <progress id="progress2" max="100" value="85"></progress>
+            <h3 class="subsection">Web design2</h3>
+            <label id="progressLabel3" for="progress3">75%</label>
+            <progress id="progress3" max="100" value="75"></progress>
         </section>
         <section class="section-portafolio">
             <h2 class="subtitle blue-decor" id="mi-portafolio">Mi portafolio</h2>
-            <img src="./assets/images/Group 47.jpg" alt="">
-            <img src="./assets/images/image 4.jpg" alt="">
-            <img src="./assets/images/Rectangle 53.jpg" alt="">
-            <img src="./assets/images/Rectangle 65.jpg" alt="">
+            <div class="wrapper snaps-inline">
+                <div class="wrapper-item">
+                    <img src="./assets/images/Group 47.jpg" alt="">
+                </div>
+                <div class="wrapper-item">
+                    <img src="./assets/images/image 4.jpg" alt="">
+                </div>
+                <div class="wrapper-item">
+                    <img src="./assets/images/Rectangle 53.jpg" alt="">
+                </div>
+                <div class="wrapper-item">
+                    <img src="./assets/images/Rectangle 65.jpg" alt="">
+                </div>
+                </div>
         </section>
     </main>
+
     <footer class="container-footer grid-footer">
         <h2 class="subtitle blue-decor item1" id="contacto">Contacto</h2>
         <div class="imagen-celular item-imagen item2">
             <img src="./assets/vectors/Ellipse 14.svg" alt="estilo de imagen">
             <img src="./assets/icons/phone 3.svg" alt="Celular">
-            <h3>Número celular</h3>
-            <p class="textalign">5525098341</p>
+            <h3 class="subsection">Número celular</h3>
+            <p class="body-text textalign">5525098341</p>
         </div>
         <div class="imagen-celular item-imagen item3">
             <img src="./assets/vectors/Ellipse 14.svg"  alt="estilo de imagen">
             <img src="./assets/icons/mail 3.svg" alt="Correo electrónico">
-            <h3>Email</h3>
-            <p class="textalign">mmenaor@gmail.com</p>
+            <h3 class="subsection">Email</h3>
+            <p class="body-text textalign">mmenaor@gmail.com</p>
         </div>
     </footer>
 </body>
